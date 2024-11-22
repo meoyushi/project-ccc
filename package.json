@@ -1,0 +1,11 @@
+{
+    "name": "cuddle-cup-cafe",
+    "version": "1.0.0",
+    "description": "A cozy and elegant cafe website",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "author": "Aayushi",
+    "license": "MIT"
+}

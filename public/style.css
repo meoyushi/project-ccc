@@ -1,0 +1,186 @@
+/* General Styles */
+
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    color: #aa6753;
+    line-height: 1.6;
+    background: url('background.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+
+/* Hero Section */
+
+header.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+header.hero .overlay {
+    background: linear-gradient(145deg, rgba(151, 116, 56, 0.9), rgba(180, 120, 90, 0.7));
+    padding: 30px 50px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    /* Victorian-style double border */
+    clip-path: url(#victorian-shape);
+    max-width: 80%;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+/* Add decorative inset shadow */
+
+header.hero .overlay::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    clip-path: url(#victorian-shape);
+    pointer-events: none;
+}
+
+
+/* Define the SVG shape in an external file or inline */
+
+header.hero svg {
+    display: none;
+}
+
+
+/* The title and text style remain the same */
+
+header.hero h1 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+}
+
+header.hero p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+header.hero .cta-button {
+    background-color: #7c6a59;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+header.hero .cta-button:hover {
+    background-color: #5a4b41;
+}
+
+
+/* About Section */
+
+section.about {
+    padding: 50px 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    margin: 50px auto;
+    border-radius: 10px;
+    max-width: 800px;
+}
+
+section.about img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+
+/* Menu Section */
+
+section.menu {
+    padding: 50px 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    margin: 50px auto;
+    border-radius: 10px;
+    max-width: 800px;
+}
+
+section.menu .menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+section.menu .menu-item {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+section.menu .menu-item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+section.menu .menu-item h3 {
+    margin: 10px 0;
+    color: #7c6a59;
+}
+
+
+/* Contact Section */
+
+section.contact {
+    padding: 50px 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    margin: 50px auto;
+    border-radius: 10px;
+    max-width: 800px;
+}
+
+section.contact p {
+    margin: 10px 0;
+}
+
+
+/* Footer */
+
+footer {
+    background: #7c6a59;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+/* Style for the video */
+
+section.about img {
+    max-width: 100%;
+    /* Ensure the video doesn't overflow */
+    width: 40%;
+    /* Adjust the width as needed */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin-top: 20px;
+}
